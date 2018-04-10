@@ -1,0 +1,11 @@
+- name: install packages
+  yum: pkg={{item}} state=installed
+  with_items:
+    - ksh
+    - glibc*i686
+    - libgcc*i686
+    - libstdc*i686
+    - compat-libstdc*.x86_64
+    - compat-libstdc*i686
+    - libXtst*i686
+    - libXrender*i686
